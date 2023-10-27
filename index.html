@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=devic, initial-scale=1.0">
+    <title>
+        Document
+    </title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function setUsername() {
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s hub";
+        }
+        function setProfile() {
+            document.getElementById("profile-image1").style.backgroundImage = "url(" + document.getElementById("profile-img").value + ")";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="avatar">
+            <div class="Pro_img" id="profile-image1"></div>
+            <div class="noti">224</div>
+        </div>
+
+        <div class="username">
+            <a class="on-hover" href="https://github.com/66070224" target="_blank">
+                <p style="font-size: x-large; font-weight: 500;" id="username-p">Arnuphap's hub</p>
+            </a>
+        </div>
+
+        <div class="input-group">
+            <div><label style="font-weight: 500; font-size: large;">Username :</label><input style="margin-left: 10px;"
+                    type="text" id="username"><button style="margin-left: 10px;" id="setUser"
+                    onclick="setUsername()">Apply</button>
+            </div>
+            <div><label style="font-weight: 500; font-size: large;">Profile Image :</label><input
+                    style="margin-left: 10px;" type="text" id="profile-img"><button onclick="setProfile()"
+                    style="margin-left: 10px;" id="setImg">Apply</button>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gal-items col-span">
+                <img class="img1" src="./01.jpg">
+            </div>
+            <div class="gal-items">
+                <img class="img1" src="./02.jpg">
+            </div>
+            <div class="gal-items">
+                <img class="img1" src="./03.jpg">
+            </div>
+            <div class="gal-items">
+                <img class="img1" src="./04.jpg">
+            </div>
+            <div class="gal-items row-span">
+                <img class="img1" src="./05.jpg">
+            </div>
+            <div class="gal-items">
+                <img class="img1" src="./06.jpg">
+            </div>
+            <div class="gal-items">
+                <img class="img1" src="./07.jpg">
+            </div>
+            <div class="gal-items">
+                <img class="img1" src="./08.jpg">
+            </div>
+            <div class="gal-items">
+                <img class="img1" src="./09.jpg">
+            </div>
+            <div class="gal-items">
+                <img class="img1" src="./10.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
